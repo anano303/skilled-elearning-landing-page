@@ -1,10 +1,12 @@
-
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     display: flex;
     width: 100vw;
     flex-direction: column;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    background-color: #F2F2F2;
 }
 
 .img1 > img {
@@ -98,6 +100,7 @@ i {
     gap: 40px;
     display: grid;
     grid-template-columns: auto;
+    margin: 16px;
     
 }
 section {
@@ -177,12 +180,33 @@ footer > h2 {
         display: none;
     }
     .img2 > img {
-        display: block;
-        width: 100%;
-        
-        
-        
+        display: none;    
     }
+    body {
+        background-image: url(./image-hero-tablet@2x.png);
+        background-repeat: no-repeat;
+        background-size: 640px 640px;
+        background-position: top -70px right -280px;
+    }
+    .cards {
+        width: 90%;
+        margin-top: 140px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    main .budjet {
+        margin-left: 40px;
+        width: 50%;
+    }
+    .header {
+        padding: 20px 40px;
+    }
+    footer {
+        padding: 20px 40px;
+    }
+
+    
     main {
         display: flex;
         justify-content: space-between;
@@ -191,14 +215,16 @@ footer > h2 {
     
     .cards  {
         grid-template-columns:  auto auto;
+        margin: 40px;
+        margin-top: 201px;
     }
     .card-header {
-        height: 212px;
+        height: 100%;
         padding-top: 65px;
+        width: 340px;
     }
-    .header {
-        
-        
+    .text {
+        width: 340px;
     }
 }
 @media  screen and (min-width:1440px) {
@@ -207,8 +233,12 @@ footer > h2 {
 }
     .img2 > img { display:none;
     }
-    .img3 > img {
-        display: block;
+    
+    body {
+        background-image: url(./image-hero-desktop@2x.png);
+        background-repeat: no-repeat;
+        background-size: 900px;
+        background-position: top -70px right -280px;
     }
     
     .cards  {
@@ -217,6 +247,23 @@ footer > h2 {
     }
     .text {
         border-radius: 15px;
+    }
+    .cards {
+        width: 80%;
+        margin-bottom: 120px;
+        margin-top: 340px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .budjet {
+        margin-left: 80px;
+    }
+    .header {
+        padding: 40px 80px;
+    }
+    footer {
+        padding: 20px 80px
     }
 
     
