@@ -183,7 +183,7 @@ footer > h2 {
         display: none;    
     }
     body {
-        background-image: url(./image-hero-tablet@2x.png);
+        background-image: url(./images/image-hero-tablet@2x.png);
         background-repeat: no-repeat;
         background-size: 640px 640px;
         background-position: top -70px right -280px;
@@ -235,7 +235,7 @@ footer > h2 {
     }
     
     body {
-        background-image: url(./image-hero-desktop@2x.png);
+        background-image: url(./images/image-hero-desktop@2x.png);
         background-repeat: no-repeat;
         background-size: 900px;
         background-position: top -70px right -280px;
